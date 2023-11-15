@@ -83,3 +83,16 @@ $('.btn').click(function(){
   $('.btn').removeClass('on');
   $(this).toggleClass('on');
 });
+
+
+
+
+// map
+function initMap(){
+  var options= {
+    zoom:20,
+    center:{lat:9.687446,lng:80.027088}
+  }
+  var googlemap = new google.maps.Map(document.getElementById("map"), options);
+}
+
