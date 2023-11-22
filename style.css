@@ -6,7 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    transition: all 0.4s ease;;
+    /* transition: all 0.4s ease;; */
+    transition: all;
 }
 
 
@@ -115,10 +116,10 @@ nav .nav-bar .logo a{
     opacity: 1;
 }
 
-.nav-bar .darkLight-searchBox{
+/* .nav-bar .darkLight-searchBox{
     display: flex;
     align-items: center;
-}
+} */
 
 
 .dark-light i.sun{
@@ -308,6 +309,8 @@ h1{
 }
 
 /* ===========================   image gallary    ============================= */
+
+
 
 
 .button-group { 
@@ -786,3 +789,77 @@ textarea {
   }
 
 }
+
+
+
+/* ======================= image gallery css  ========================*/
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+    align-items: center;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    color: #162515;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+.products_containers{
+  display: grid;
+  grid-template-columns: repeat(4, 220px);
+  gap: 4rem 10rem;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.imagetitles{
+  grid-template-columns: repeat(3, 220px);
+  padding-left: 20%;
+}
+
+.containerimg{
+  padding-left: 5%;
+}
+
+
+/* ============================ end image gallery ========================== */
