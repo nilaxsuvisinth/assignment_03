@@ -6,10 +6,11 @@
     <title>Assignment 03</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+<!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
 </head>
 <body>
 
@@ -17,15 +18,15 @@
 
     <nav>
         <div class="nav-bar nav1">
-            <img src="./Assets/img/favicon.png" alt="faviconimg" class="iconcolour">
-            <span class="logo navLogo mylogo"><a href="index.html">PLANTEX</a></span>
+            <!-- <img src="./Assets/img/favicon.png" alt="faviconimg" class="iconcolour"> -->
+            <span class="logo navLogo mylogo"><i class="fa fa-leaf" aria-hidden="true"></i> <a href="index.html">PLANTEX</a></span>
             <div class="menu">
                 <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#FAQs">FAQs</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
                 </ul>
             </div>
 
@@ -44,7 +45,7 @@
 
 <!-- ============================ hero section start =============================== -->
 
- <section class="section1">
+ <section class="section1" id="home">
     <div class="container"> 
         <div class="div1">
             <h1>Plant will make <br> your life better</h1>
@@ -63,7 +64,7 @@
 
 <!-- ========================== about section start ============================== -->
 
-<section class="section2">
+<section class="section2" id="about">
     <div class="container">
       <div>
         <img src="./Assets/img/about.png" alt="" class="img2">
@@ -78,19 +79,19 @@
           </p>
           <div class="details">
             <p class="details-description">
-              <i class="fa fa-check-square"></i>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
               We always deliver on time.
             </p>
             <p class="details-description">
-              <i class="fa fa-check-square"></i>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
               We give you guides to protect and care for your plants.
             </p>
             <p class="details-description">
-              <i class="fa fa-check-square"></i>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
               We always come over for a check-up after sale.
             </p>
             <p class="details-description">
-              <i class="fa fa-check-square"></i>
+              <i class="fa fa-check-square" aria-hidden="true"></i>
               100% money back guaranteed.
             </p>
         </div>
@@ -218,8 +219,9 @@
 
 <!-- ================================= image gallary end ============================ -->
 
-<!-- ##########   image gallery start with filter ############## -->
-<section class="containerimg">
+<!-- =================================  image gallery start filter =================== -->
+
+<!-- <section class="containerimg">
 <div class="container containerimg">
   <div class="row">
   <div class="gallery">
@@ -268,14 +270,15 @@
       </div>
   </div>
 </div>
-</section>
+</section> -->
 
 
-<!-- ##########   image gallery with filter end ############## -->
+<!-- =================================  image gallery start end =================== -->
 
 <!-- ================================= questions start ============================== -->
 
-<section class="section5">
+
+<section class="section5" id="FAQs">
   <div class="faq-content">
     <h1>Some common questions<br>were often asked</h1>
     <div class="faq-question">
@@ -367,7 +370,7 @@
         </div>
          <p class="team_title">PETER</p><br>
         <div class="team_para">
-          Peter, a savvy businessman, orchestrates deals and fosters growth through visionary leadership. His strategic decisions and innovative approach propel companies toward success, creating an environment ripe for achievement.</div>
+          Peter, a savvy businessman, orchestrates deals and fosters growth through visionary leadership. His strategic decisions and innovative approach propel companies toward success, creating an environment ripe for achievement rchestrates growth through.</div>
       
       </div>
 
@@ -405,46 +408,51 @@
           <div class="contact__info">
             <p class="contact__info-title">Location</p>
             <span class="contact__info-subtitle">
-              <img src="./Assets/img/location.svg" alt="location" class="location_img">
-              <iconify-icon icon="carbon:location"></iconify-icon> Jaffna, Sri Lanka
+              <i class="fa fa-map-marker" aria-hidden="true"></i> Jaffna, Sri Lanka
             </span>
           </div>
 
         </div>
       </div>
 
-      <form action="" class="contact__form">
-        <div class="contact__inputs">
 
-          <div class="contact__content">
-            <input type="text" placeholder=" " class="contact__input" />
-            <label for="" class="contact__label">Name</label>
-          </div>
-
-          <div class="contact__content">
-            <input type="email" placeholder=" " class="contact__input" />
-            <label for="" class="contact__label">Email</label>
-          </div>
-
-          <div class="contact__content">
-            <input type="number" placeholder=" " class="contact__input" />
-            <label for="" class="contact__label">Phone</label>
-          </div>
-
-          <div class="contact__content contact__area">
-            <textarea
-              name="message"
-              placeholder=" "
-              class="contact__input"
-            ></textarea>
-            <label for="" class="contact__label">Message</label>
-          </div>
+      <form>
+        <!-- Name -->
+        <div class="name">
+            <label for="name">First Name</label>
+            <br>
+            <input type="text" id="name" placeholder="Your first name" required>
         </div>
+        <!-- Company -->
+        <div class="name">
+            <label for="name">Last Name</label>
+            <br>
+            <input type="text" id="name2" placeholder="Your last name" required>
+        </div>
+        <!-- Email -->
+        <div class="email">
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email" placeholder="Your email" required>
+        </div>
+        <!-- Telephone -->
+        <div class="tele">
+            <label for="telephone">Phone Number</label>
+            <br>
+            <input type="number" id="telephone" placeholder="Your Number" required>
+        </div>
+        <!-- Message -->
+        <div class="message">
+            <label for="message">Message</label>
+            <br>
+            <textarea id="message" placeholder="Type something"></textarea>
+        </div>
+        <!-- Submit -->
+        <div class="submit">
+            <input type="submit" value="SUBMIT">
+        </div>
+    </form>
 
-        <button class="btn contact__button">
-          Send Message <i class="bx bx-right-arrow-alt"></i>
-        </button>
-      </form>
     </div>
   </div>
 </section>
@@ -471,15 +479,15 @@
         <h3>PLANTEX<span><img src="./Assets/img/favicon.png" alt=""></span></h3>
 
         <p class="footer-links">
-          <a href="#" class="link-1">Home</a>
+          <a href="#home" class="link-1">Home</a>
           
-          <a href="#">About</a>
+          <a href="#about">About</a>
         
-          <a href="#">Products</a>
+          <a href="#products">Products</a>
         
-          <a href="#">FAQs</a>
+          <a href="#FAQs">FAQs</a>
           
-          <a href="#">Contact Us</a>
+          <a href="#contact">Contact Us</a>
           
         </p>
 
@@ -514,10 +522,10 @@
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
+          <a><i class="fa fa-facebook"></i></a>
+          <a><i class="fa fa-twitter"></i></a>
+          <a><i class="fa fa-linkedin"></i></a>
+          <a><i class="fa fa-github"></i></a>
 
         </div>
 
@@ -525,10 +533,7 @@
 
     </footer>
  
-
 <!-- ================================= footer end ====================================-->
-
-
 
 <script src="script.js"></script>
 <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUZ61A_lK8Em8_DQ6kSlGzX-SDBK1lEKg&callback=initMap"></script>

@@ -88,32 +88,32 @@ body.addEventListener("click" , e =>{
 // ===========================  js for image gallery ===================================
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  $(".filter-button").click(function(){
-      var value = $(this).attr('data-filter');
+//   $(".filter-button").click(function(){
+//       var value = $(this).attr('data-filter');
       
-      if(value == "all")
-      {
-          //$('.filter').removeClass('hidden');
-          $('.filter').show('1000');
-      }
-      else
-      {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-          $(".filter").not('.'+value).hide('3000');
-          $('.filter').filter('.'+value).show('3000');
+//       if(value == "all")
+//       {
+//           //$('.filter').removeClass('hidden');
+//           $('.filter').show('1000');
+//       }
+//       else
+//       {
+// //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+// //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+//           $(".filter").not('.'+value).hide('3000');
+//           $('.filter').filter('.'+value).show('3000');
           
-      }
-  });
+//       }
+//   });
   
-  if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+//   if ($(".filter-button").removeClass("active")) {
+// $(this).removeClass("active");
+// }
+// $(this).addClass("active");
 
-});
+// });
 
 // =======================   image gallery end ===================================
 
@@ -128,3 +128,53 @@ function initMap(){
 }
 
 // =========================== map end ==================================
+
+
+
+//  ================= 3rd img gallary =============================
+
+
+// import {imageData} from '/data.js'
+
+// const imageSection = document.getElementById('image-section')
+
+// function allImagesFunction(){
+//     let imageSet = ''
+//     for (let data of imageData.all){
+//         imageSet += 
+//             `
+//             <div class="col-lg-4 col-sm-12">
+//                 <img class="w-100 h-75" src="Assets/img/${data}">
+//             </div>
+//             `
+//         imageSection.innerHTML = imageSet
+//     }
+// }
+
+// allImagesFunction()
+
+// document.addEventListener('click',function(e){
+//     if(e.target.id){
+//         if(e.target.id === "all-btn"){
+//                 allImagesFunction()
+//         }
+//         else{
+//             const filterImage = imageData.all.filter(function(data){
+//                 return data.includes(`${e.target.id}`)
+//             })
+//             let imageFilter = ""
+//             for (let filterData of filterImage){
+//             imageFilter += 
+//                 `
+//                 <div class="col-lg-4 col-md-6 col-sm-12">
+//                     <img class="w-100 h-75" src="Assets/img/${filterData}">
+//                 </div>
+//                 `
+//             imageSection.innerHTML = imageFilter
+//             }
+//         }
+//     }
+// })
+
+
+// ================= 3rd img gallary end =============================
