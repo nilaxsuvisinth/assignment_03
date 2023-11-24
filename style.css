@@ -112,9 +112,16 @@ nav .nav-bar .logo a{
     transition: all 0.3s ease;
 }
 
-.nav-links li:hover a::before{
-    opacity: 1;
+
+.nav-link:hover{
+border-bottom: 3px solid rgb(55, 73, 38);
+transition: 0.3s;
 }
+
+
+/* .nav-link:visited{
+  border-radius: #08f;
+} */
 
 /* .nav-bar .darkLight-searchBox{
     display: flex;
@@ -262,7 +269,7 @@ h1{
 
 .img2 {
     width: 380px;
-  }
+  }  
 
 .img2:hover{
     transform: scale(1.2);
@@ -309,6 +316,7 @@ h1{
 }
 
 /* ===========================   image gallary    ============================= */
+
 
 
 
